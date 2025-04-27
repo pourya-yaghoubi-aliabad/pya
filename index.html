@@ -3,92 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Links</title>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <title>Connect with Me</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <style>
-    * {
+    body {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      background: linear-gradient(135deg, #1d1f21, #292c2f);
-      font-family: 'Outfit', sans-serif;
-      color: #fff;
+      height: 100vh;
+      background: linear-gradient(135deg, #667eea, #764ba2);
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
-      height: 100vh;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
       text-align: center;
     }
     h1 {
-      font-size: 2.8rem;
+      font-size: 2.5rem;
       margin-bottom: 40px;
-      color: #f0f0f0;
-      letter-spacing: 1px;
     }
     .icons {
       display: flex;
-      gap: 50px;
+      gap: 40px;
       flex-wrap: wrap;
       justify-content: center;
     }
     .icon {
-      width: 120px;
-      height: 120px;
-      background: linear-gradient(135deg, #3a3f44, #1d1f21);
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
       border-radius: 20px;
+      padding: 20px;
+      width: 100px;
+      height: 100px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-decoration: none;
-      color: #f0f0f0;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      color: #fff;
       transition: all 0.3s ease;
-      position: relative;
-    }
-    .icon::before {
-      content: '';
-      position: absolute;
-      top: -10px;
-      left: -10px;
-      right: -10px;
-      bottom: -10px;
-      background: linear-gradient(45deg, #00c6ff, #0072ff);
-      z-index: -1;
-      border-radius: 25px;
-      opacity: 0;
-      transition: 0.4s;
-      filter: blur(10px);
-    }
-    .icon:hover::before {
-      opacity: 1;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     }
     .icon:hover {
-      transform: translateY(-10px) scale(1.05);
+      background: rgba(255, 255, 255, 0.25);
+      transform: translateY(-8px) scale(1.05);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
     }
     .icon i {
-      font-size: 42px;
+      font-size: 36px;
       margin-bottom: 10px;
     }
     .icon span {
       font-weight: 600;
-      font-size: 16px;
+      font-size: 14px;
     }
     @media (max-width: 600px) {
       .icons {
         flex-direction: column;
-        gap: 25px;
+        gap: 20px;
       }
     }
   </style>
 </head>
 <body>
 
-<h1>Connect With Me</h1>
+<h1>Connect with Me</h1>
 
 <div class="icons">
   <a href="tel:+989120580867" class="icon">
@@ -96,11 +77,11 @@
     <span>Phone</span>
   </a>
   <a href="http://t.me/Pourya_yaghoubi_aliabad" target="_blank" class="icon">
-    <i class="fab fa-telegram-plane"></i>
+    <i class="fab fa-telegram"></i>
     <span>Telegram</span>
   </a>
   <a href="https://www.linkedin.com/in/pourya-yaghoubi-aliabad" target="_blank" class="icon">
-    <i class="fab fa-linkedin-in"></i>
+    <i class="fab fa-linkedin"></i>
     <span>LinkedIn</span>
   </a>
 </div>
